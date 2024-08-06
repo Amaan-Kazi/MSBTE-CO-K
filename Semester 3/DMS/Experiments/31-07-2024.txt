@@ -1,0 +1,41 @@
+CREATE TABLE student (
+rollNo int PRIMARY KEY,
+name varchar(20),
+marks int,
+department varchar(20),
+age int,
+place varchar(20),
+phoneNo int,
+BirthDate date
+);
+
+INSERT INTO student
+VALUES (5, 'Raju', 96, 'Computer', 18, 'pune', 1234567890, '01-04-2006');
+
+SELECT * FROM student;
+
+SELECT * FROM student
+WHERE place='pune' OR place='Chembur';
+
+UPDATE student
+SET marks = 96
+WHERE name = 'Rahul';
+
+SELECT RollNo, Name, Marks, Department FROM student
+WHERE Department = 'Computer';
+
+SELECT RollNo, Name, Marks FROM student
+WHERE Marks < 40;
+
+SELECT * FROM student
+WHERE Name LIKE 'M%';
+
+SELECT * FROM student
+WHERE marks > 70 AND marks < 95;
+
+ALTER TABLE student
+ADD ZipCode int;
+
+RENAME student to CO4IB;
+
+SELECT * FROM CO4IB;
