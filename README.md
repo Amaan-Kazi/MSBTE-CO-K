@@ -9,10 +9,10 @@ Experiments and resources for Maharashtra State Board Of technical Education - C
     * WPD
     * BLP
 3. Semester 3
-    * [OPP](Semester%203/OPP/README.md)
-    * [DSU](Semester%203/DSU/README.md)
-    * [DMS](Semester%203/DMS/README.md)
-    * [CGR](Semester%203/CGR/README.md)
+    * [OPP](Semester%203/OPP/)
+    * [DSU](Semester%203/DSU/)
+    * [DMS](Semester%203/DMS/)
+    * [CGR](Semester%203/CGR/)
     * DTE
 4. Semester 4
 5. Semester 5
