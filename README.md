@@ -1,17 +1,18 @@
 # MSBTE-CO-K
-Experiments and resources for Maharashtra State Board Of technical Education - Computer Engineering - K Scheme
+Experiments and resources for Maharashtra State Board Of Technical Education - Computer Engineering - K Scheme
 
 ## Subjects
-| Sr.No. | Semester 1               | Semester 2               | Semester 3               | Semester 4               | Semester 5               | Semester 6               |
+| Sr.No. | Semester 1               | Semester 2               | _Semester 3_             | Semester 4               | Semester 5               | Semester 6               |
 |:------:|:------------------------:|:------------------------:|:------------------------:|:------------------------:|:------------------------:|:------------------------:|
 | 1      | ICT                      | PIC                      | [OPP](Semester%203/OPP/) |                          |                          |                          |
-| 2      |                          | WPD                      | [DSU](Semester%203/DSU/) |                          |                          |                          |
-| 3      |                          | BLP                      | [DMS](Semester%203/DMS/) |                          |                          |                          |
-| 4      |                          |                          | [CGR](Semester%203/CGR/) |                          |                          |                          |
-| 5      |                          |                          | DTE                      |                          |                          |                          |
+| 2      | WPC                      | WPD                      | [DSU](Semester%203/DSU/) |                          |                          |                          |
+| 3      | $${\color{red}BMS}$$     | BLP                      | [DMS](Semester%203/DMS/) |                          |                          |                          |
+| 4      | $${\color{red}BSC}$$     | $${\color{red}BEE}$$     | [CGR](Semester%203/CGR/) |                          |                          |                          |
+| 5      | $${\color{red}ENG}$$     | $${\color{red}AMS}$$     | DTE                      |                          |                          |                          |
+| 6      | $${\color{red}EGE}$$     | $${\color{red}PCO}$$     | $${\color{red}EIC}$$     |                          |                          |                          |
 
 > [!NOTE]
-> Please ⭐ this repository if it has helped you
+> Please ⭐ this repository if it has been helpful
 
 > [!CAUTION]
 > This repository is not intended for copying assignments, projects, etc\
