@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <conio.h>
+#include <string.h>
 
 void main ()
 {
-	int arr[100], search, n, i, flag = 0;
+	int n, i, flag = 0;
 	int start, mid, end;
+	char arr[100][100], search[100];
 	clrscr();
 
 	printf("Number of elements: ");
@@ -14,11 +16,13 @@ void main ()
 	for (i = 0; i < n; i++)
 	{
 		printf("%d. ", i);
-		scanf("%d", &arr[i]);
+		fflush(stdin);
+		gets(arr[i]);
 	}
 
 	printf("Search element: ");
-	scanf("%d", &search);
+	fflush(stdin);
+	gets(search);
 
 	start = 0;
 	end = n-1;
@@ -26,12 +30,12 @@ void main ()
 
 	while (start <= end)
 	{
-		if (arr[mid] == search)
+		if (strcmp(arr[mid], search) == 0)
 		{
 			flag = 1;
 			break;
 		}
-		else if (arr[mid] > search)
+		else if (strcmp(arr[mid], search) > 0)
 		{
 			end = mid - 1;
 			mid = (start+end)/2;
@@ -43,10 +47,10 @@ void main ()
 		}
 	}
 
-	 if (flag == 0)
+	if (flag == 0)
 		printf("Not found");
 	else
-		printf("%d found on index %d", search, mid);
+		printf("%s found on index %d\n", search, mid);
 
 	getch();
 }
