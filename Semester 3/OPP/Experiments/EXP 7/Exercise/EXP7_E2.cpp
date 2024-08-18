@@ -51,8 +51,6 @@ int test2Total(Test2 t)
 	return t.total;
 }
 
-
-
 int main ()
 {
 	Test1 t1;
