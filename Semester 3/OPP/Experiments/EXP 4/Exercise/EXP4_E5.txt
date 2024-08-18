@@ -1,0 +1,11 @@
+struct and class are mostly similar in functionality
+the main difference is that by default, when no access specifier is defined:
+struct: Members and Methods are public
+class: Members and Methods are private
+
+Both structs and classes can have
+Data members (variables)
+Member functions (methods)
+Constructors and destructors
+Inheritance
+Polymorphism
