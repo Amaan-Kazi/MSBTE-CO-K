@@ -13,7 +13,7 @@ void displayArray()
 	}
 }
 
-void insertElement(pos, num)
+void insertElement(int pos, int num)
 {
 	int i;
 	for(i = n; i > pos; i--)
@@ -24,7 +24,7 @@ void insertElement(pos, num)
 	n++;
 }
 
-void deleteElement(pos)
+void deleteElement(int pos)
 {
 	int i;
 	for (i = pos; i < n; i++)
