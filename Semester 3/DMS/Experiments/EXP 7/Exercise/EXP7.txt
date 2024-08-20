@@ -1,0 +1,19 @@
+CREATE TABLE orders (
+    cust_id NUMBER,
+    order_id NUMBER,
+    items NUMBER,
+    amount NUMBER
+);
+
+INSERT INTO orders VALUES (3, 1, 12, 2500);
+INSERT INTO orders VALUES (1, 2, 4, 1000);
+INSERT INTO orders VALUES (3, 3, 25, 6500);
+INSERT INTO orders VALUES (2, 4, 6, 1200);
+INSERT INTO orders VALUES (2, 5, 18, 3000);
+
+SELECT cust_id, order_id, items, amount, 
+    (amount + 200) AS total_amount,
+    (amount - 100) AS offer_price,
+    (amount * 5) AS revised_amount,
+    (amount / 2) AS half_amount
+FROM Orders;
