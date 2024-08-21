@@ -1,0 +1,13 @@
+CREATE TABLE abc (
+	num int,
+    num2 int
+);
+
+INSERT INTO abc VALUES (1, 5), (2, 4), (3, 10);
+
+start transaction;
+INSERT INTO abc VALUES (4, 10), (5, 8), (6, 20);
+SELECT * FROM abc;
+
+ROLLBACK;
+SELECT * FROM abc;
