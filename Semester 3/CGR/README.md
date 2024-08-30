@@ -1,2 +1,2 @@
 ## CGR: Computer Graphics
-Software used: Turbo C++
+Compiler used: Turbo C++

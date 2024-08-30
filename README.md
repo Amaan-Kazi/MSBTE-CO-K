@@ -4,8 +4,8 @@ Experiments and resources for Maharashtra State Board Of Technical Education - C
 ## Subjects
 | Sr.No. | Semester 1               | Semester 2               | _Semester 3_             | Semester 4               | Semester 5               | Semester 6               |
 |:------:|:------------------------:|:------------------------:|:------------------------:|:------------------------:|:------------------------:|:------------------------:|
-| 1      | ICT                      | PIC                      | [OPP](Semester%203/OPP/) |                          |                          |                          |
-| 2      | WPC                      | WPD                      | [DSU](Semester%203/DSU/) |                          |                          |                          |
+| 1      | ICT                      | [PIC](Semester%202/PIC)  | [OPP](Semester%203/OPP/) |                          |                          |                          |
+| 2      | WPC                      | [WPD](Semester%202/WPD)  | [DSU](Semester%203/DSU/) |                          |                          |                          |
 | 3      | $${\color{red}BMS}$$     | BLP                      | [DMS](Semester%203/DMS/) |                          |                          |                          |
 | 4      | $${\color{red}BSC}$$     | $${\color{red}BEE}$$     | [CGR](Semester%203/CGR/) |                          |                          |                          |
 | 5      | $${\color{red}ENG}$$     | $${\color{red}AMS}$$     | DTE                      |                          |                          |                          |
