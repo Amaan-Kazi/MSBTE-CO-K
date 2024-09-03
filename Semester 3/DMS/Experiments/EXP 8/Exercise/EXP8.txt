@@ -1,0 +1,25 @@
+CREATE TABLE Emp (
+    empno    number,
+    ename    varchar(20),
+    job      varchar(20),
+    mgr      varchar(20),
+    hiredate date,
+    sal      float,
+    comm     number,
+    deptno   number,
+    city     varchar(10)
+);
+
+
+INSERT INTO Emp VALUES (101, 'Amit Sharma', 'Manager', 'Rakesh', '01-15-21', 60000, 600, 10, 'Mumbai');
+INSERT INTO Emp VALUES (102, 'Priya Desai', 'Clerk', 'Suresh', '02-20-20', 30000, 500, 20, 'Mumbai');
+INSERT INTO Emp VALUES (103, 'Ravi Patel', 'Analyst', 'Mahesh', '03-25-22', 45000, 0, 30, 'Pune');
+INSERT INTO Emp VALUES (104, 'Sita Rao', 'Clerk', 'Suresh', '04-10-19', 28000, 500, 40, 'Nagpur');
+INSERT INTO Emp VALUES (105, 'Rajesh Kumar', 'Developer', 'Ramesh', '05-15-23', 55000, 200, 50, 'Mumbai');
+INSERT INTO Emp VALUES (106, 'Anita Singh', 'Manager', 'Ramesh', '06-22-21', 70000, 0, 60, 'Nashik');
+INSERT INTO Emp VALUES (107, 'Vikram Jain', 'Clerk', 'Mahesh', '07-05-20', 32000, 0, 70, 'Mumbai');
+INSERT INTO Emp VALUES (108, 'Neeta Agarwal', 'Developer', 'Rakesh', '08-12-22', 49000, 100, 80, 'Pune');
+INSERT INTO Emp VALUES (109, 'Suresh Menon', 'Analyst', 'Mahesh', '09-30-19', 38000, 0, 90, 'Nagpur');
+INSERT INTO Emp VALUES (110, 'Sunita Verma', 'Clerk', 'Suresh', '10-25-23', 27000, 500, 100, 'Nashik');
+
+SELECT * FROM Emp;
