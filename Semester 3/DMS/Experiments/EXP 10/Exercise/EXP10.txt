@@ -1,0 +1,45 @@
+CREATE TABLE emp1 (
+    empno NUMBER,
+    ename varchar(20),
+    deptno NUMBER
+);
+
+INSERT INTO emp1 VALUES (1, 'John', 10);
+INSERT INTO emp1 VALUES (2, 'Jane', 20);
+INSERT INTO emp1 VALUES (3, 'Alice', 10);
+INSERT INTO emp1 VALUES (4, 'Bob', 30);
+INSERT INTO emp1 VALUES (5, 'John', 20);
+
+SELECT * FROM emp1;
+
+
+CREATE TABLE emp2 (
+    empno NUMBER,
+    ename varchar(20),
+    deptno NUMBER
+);
+
+INSERT INTO emp2 VALUES (6, 'Alice', 10);
+INSERT INTO emp2 VALUES (7, 'John', 20);
+INSERT INTO emp2 VALUES (8, 'David', 40);
+INSERT INTO emp2 VALUES (9, 'Jane', 20);
+INSERT INTO emp2 VALUES (10, 'Emma', 30);
+
+SELECT * FROM emp2;
+
+
+SELECT ename FROM emp1
+UNION ALL
+SELECT ename FROM emp2;
+
+SELECT ename FROM emp1
+UNION
+SELECT ename FROM emp2;
+
+SELECT ename FROM emp1
+INTERSECT
+SELECT ename FROM emp2;
+
+SELECT ename FROM emp1
+MINUS
+SELECT ename FROM emp2;

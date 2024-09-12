@@ -9,7 +9,7 @@ public:
     void input() {
         cout << "Enter staff code: ";
         cin >> code;
-        cin.ignore(); // Ignore newline character left in the buffer after integer input
+        cin.ignore();
         cout << "Enter staff name: ";
         getline(cin, name);
     }
@@ -48,7 +48,7 @@ public:
         Staff::input();
         cout << "Enter grade: ";
         cin >> grade;
-        cin.ignore(); // Ignore newline character left in the buffer after integer input
+        cin.ignore();
     }
 
     void display() const {
@@ -65,7 +65,7 @@ public:
         Staff::input();
         cout << "Enter typing speed: ";
         cin >> speed;
-        cin.ignore(); // Ignore newline character left in the buffer after float input
+        cin.ignore();
     }
 
     void display() const {
@@ -82,7 +82,7 @@ public:
         Typist::input();
         cout << "Enter regular wages: ";
         cin >> wages2;
-        cin.ignore(); // Ignore newline character left in the buffer after integer input
+        cin.ignore();
     }
 
     void display() const {
@@ -99,7 +99,7 @@ public:
         Typist::input();
         cout << "Enter casual wages: ";
         cin >> wages;
-        cin.ignore(); // Ignore newline character left in the buffer after float input
+        cin.ignore();
     }
 
     void display() const {

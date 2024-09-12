@@ -23,3 +23,15 @@ INSERT INTO Emp VALUES (109, 'Suresh Menon', 'Analyst', 'Mahesh', '09-30-19', 38
 INSERT INTO Emp VALUES (110, 'Sunita Verma', 'Clerk', 'Suresh', '10-25-23', 27000, 500, 100, 'Nashik');
 
 SELECT * FROM Emp;
+
+SELECT * FROM Emp
+WHERE city = 'Mumbai' AND sal > 50000;
+
+SELECT * FROM Emp
+WHERE job = 'Clerk' OR comm = 500;
+
+SELECT * FROM Emp
+WHERE sal BETWEEN 20000 AND 50000;
+
+SELECT * FROM Emp
+WHERE city IN ('Mumbai', 'Pune', 'Nashik', 'Nagpur');
