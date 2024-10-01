@@ -1,0 +1,4 @@
+SELECT POWER(12, 3),
+       POWER(14, 3),
+       POWER(16, 3)
+FROM DUAL;
