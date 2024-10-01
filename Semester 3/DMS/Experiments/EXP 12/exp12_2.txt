@@ -1,0 +1,20 @@
+CREATE TABLE employees (
+    employee_id NUMBER PRIMARY KEY,
+    first_name VARCHAR2(50),
+    last_name VARCHAR2(50),
+    salary NUMBER
+);
+
+INSERT INTO employees (employee_id, first_name, last_name, salary) VALUES (1, 'John', 'Doe', 4500.75);
+INSERT INTO employees (employee_id, first_name, last_name, salary) VALUES (2, 'Jane', 'Smith', 3200.50);
+INSERT INTO employees (employee_id, first_name, last_name, salary) VALUES (3, 'Alice', 'Johnson', 2750.25);
+INSERT INTO employees (employee_id, first_name, last_name, salary) VALUES (4, 'Bob', 'Brown', 6800.00);
+INSERT INTO employees (employee_id, first_name, last_name, salary) VALUES (5, 'Charlie', 'Davis', 5000.10);
+
+SELECT employee_id,
+       first_name,
+       last_name,
+       salary,
+       CEIL(salary) AS rounded_salary
+FROM employees;
+
