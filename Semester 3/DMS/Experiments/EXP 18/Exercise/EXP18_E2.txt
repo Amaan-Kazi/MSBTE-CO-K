@@ -1,0 +1,12 @@
+DECLARE
+    age NUMBER;
+BEGIN
+    age :=:Age;
+    dbms_output.put_line('Age: ' || age);
+
+    IF age >= 18 THEN
+        dbms_output.put_line('You can vote');
+    ELSE
+        dbms_output.put_line('You cannot vote');
+    END IF;
+END

@@ -1,0 +1,21 @@
+DECLARE
+    percentage NUMBER;
+    grade VARCHAR2(20);
+BEGIN
+    percentage :=:percentage;
+
+    IF percentage >= 75 THEN
+        grade := 'Distinction';
+    ELSIF percentage >= 60 THEN
+        grade := 'First Class';
+    ELSIF percentage >= 45 THEN
+        grade := 'Second Class';
+    ELSIF percentage >= 40 THEN
+        grade := 'Pass Class';
+    ELSE
+        grade := 'Fail';
+    END IF;
+
+    DBMS_OUTPUT.PUT_LINE('Percentage: ' || percentage);
+    DBMS_OUTPUT.PUT_LINE('Grade: ' || grade);
+END;

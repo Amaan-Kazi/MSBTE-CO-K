@@ -1,0 +1,11 @@
+DECLARE
+    x INT;
+BEGIN
+    x :=:Value;
+
+    IF x >= 0 THEN
+        dbms_output.put_line('x:' || x || ' is +ve');
+    ELSE
+        dbms_output.put_line('x:' || x || ' is -ve');
+    END IF;
+END
