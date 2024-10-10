@@ -7,7 +7,7 @@ void main ()
 	int gd = DETECT, gm;
 	clrscr();
 
-	initgraph(&gd, &gm, "C://TURBOC3/BGI/ASD2");
+	initgraph(&gd, &gm, "C:\\TURBOC3\\BGI");
 
 	// Computer
 	rectangle(100, 50, 450, 250); //x1,y1,x2,y2

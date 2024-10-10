@@ -18,7 +18,7 @@ void main ()
 	printf("Radius: ");
 	scanf("%d", &r);
 
-	initgraph(&gd, &gm, "C:/TURBOC3/BGI/CIRCLE.C");
+	initgraph(&gd, &gm, "C:\\TURBOC3\\BGI");
 
 	// Bresenham's Circle Drawing Algorithm (8 way symmetry)
 	d = 3 - (2 * r);
