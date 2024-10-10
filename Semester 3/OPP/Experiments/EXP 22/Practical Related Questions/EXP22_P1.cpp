@@ -8,7 +8,7 @@ class base {
 		virtual void display()=0;
 };
 
-class derived {
+class derived : base {
 	public:
 		int c;
 		int d;	
