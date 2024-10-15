@@ -1,0 +1,11 @@
+DECLARE
+    sum_even INTEGER := 0;
+BEGIN
+    FOR i IN 1..10 LOOP
+        IF MOD(i, 2) != 0 THEN
+            CONTINUE;
+        END IF;
+        sum_even := sum_even + i;
+    END LOOP;
+    DBMS_OUTPUT.PUT_LINE('Sum of even numbers between 1 and 10 is: ' || sum_even);
+END;

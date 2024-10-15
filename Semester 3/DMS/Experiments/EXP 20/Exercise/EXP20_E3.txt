@@ -1,0 +1,17 @@
+DECLARE
+    day_number INTEGER :=:day_number;
+    day_name VARCHAR2(20);
+BEGIN
+    CASE day_number
+        WHEN 1 THEN day_name := 'Monday';
+        WHEN 2 THEN day_name := 'Tuesday';
+        WHEN 3 THEN day_name := 'Wednesday';
+        WHEN 4 THEN day_name := 'Thursday';
+        WHEN 5 THEN day_name := 'Friday';
+        WHEN 6 THEN day_name := 'Saturday';
+        WHEN 7 THEN day_name := 'Sunday';
+        ELSE day_name := 'Invalid input';
+    END CASE;
+
+    DBMS_OUTPUT.PUT_LINE('The day is: ' || day_name);
+END;

@@ -1,0 +1,11 @@
+DECLARE
+    num INTEGER := 10;
+    factorial INTEGER := 1;
+    i INTEGER := 1;
+BEGIN
+    WHILE i <= num LOOP
+        factorial := factorial * i;
+        i := i + 1;
+    END LOOP;
+    DBMS_OUTPUT.PUT_LINE('Factorial of 10 is: ' || factorial);
+END;

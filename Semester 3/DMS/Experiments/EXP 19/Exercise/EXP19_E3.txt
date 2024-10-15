@@ -1,0 +1,22 @@
+DECLARE
+    num INTEGER;
+    i INTEGER;
+    is_prime BOOLEAN;
+BEGIN
+    FOR num IN 1..50 LOOP
+        is_prime := TRUE;
+        IF num < 2 THEN
+            is_prime := FALSE;
+        ELSE
+            FOR i IN 2..TRUNC(SQRT(num)) LOOP
+                IF MOD(num, i) = 0 THEN
+                    is_prime := FALSE;
+                    EXIT;
+                END IF;
+            END LOOP;
+        END IF;
+        IF is_prime THEN
+            DBMS_OUTPUT.PUT_LINE(num);
+        END IF;
+    END LOOP;
+END;

@@ -1,0 +1,13 @@
+DECLARE
+    i INTEGER := 1;
+BEGIN
+    LOOP
+        IF i = 5 THEN
+            i := i + 1;
+            CONTINUE;  -- Skip to the next iteration
+        END IF;
+        DBMS_OUTPUT.PUT_LINE(i);
+        i := i + 1;
+        EXIT WHEN i > 10;
+    END LOOP;
+END;
