@@ -11,7 +11,6 @@ INSERT INTO student (student_id, name, department, age) VALUES (3, 'Charlie Rob'
 INSERT INTO student (student_id, name, department, age) VALUES (4, 'Robinson', 'Physics', 19);
 INSERT INTO student (student_id, name, department, age) VALUES (5, 'John Wick', 'Computer', 23);
 
-
 DECLARE
     CURSOR student_cursor IS
         SELECT student_id, name, age
@@ -35,3 +34,5 @@ BEGIN
     END LOOP;
     CLOSE student_cursor;
 END;
+
+COMMIT;
