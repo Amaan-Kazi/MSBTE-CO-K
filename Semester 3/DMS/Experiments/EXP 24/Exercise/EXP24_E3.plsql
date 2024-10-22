@@ -1,0 +1,16 @@
+CREATE OR REPLACE PROCEDURE insert_emp_records IS
+BEGIN
+    INSERT INTO EMP VALUES (1, 50000);
+    INSERT INTO EMP VALUES (2, 60000);
+    INSERT INTO EMP VALUES (3, 55000);
+    
+    COMMIT;
+
+    DBMS_OUTPUT.PUT_LINE('Inserted 3 records');
+END;
+
+BEGIN
+    insert_emp_records();
+END;
+
+COMMIT;
