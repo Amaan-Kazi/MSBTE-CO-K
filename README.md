@@ -8,11 +8,8 @@ Experiments and resources for Maharashtra State Board Of Technical Education - C
 | 2      | WPC                      | [WPD](Semester%202/WPD)  | [DSU](Semester%203/DSU/) |                          |                          |                          |
 | 3      | $${\color{red}BMS}$$     | BLP                      | [DMS](Semester%203/DMS/) |                          |                          |                          |
 | 4      | $${\color{red}BSC}$$     | $${\color{red}BEE}$$     | [CGR](Semester%203/CGR/) |                          |                          |                          |
-| 5      | $${\color{red}ENG}$$     | $${\color{red}AMS}$$     | DTE                      |                          |                          |                          |
+| 5      | $${\color{red}ENG}$$     | $${\color{red}AMS}$$     | [DTE](Semester%203/DTE/) |                          |                          |                          |
 | 6      | $${\color{red}EGE}$$     | $${\color{red}PCO}$$     | $${\color{red}EIC}$$     |                          |                          |                          |
-
-> [!NOTE]
-> Please ⭐ this repository if it has been helpful
 
 > [!CAUTION]
 > This repository is not intended for copying assignments, projects, etc\
