@@ -6,6 +6,9 @@
 using namespace std;
 
 ifstream userFile;
+ifstream adminAccessFile;
+ifstream userAccessFile;
+ifstream guestAccessFile;
 
 class Account
 {
@@ -13,18 +16,27 @@ class Account
     string name;
     string email;
     string password;
+    string accessLevel;
 };
 
 class User : public Account
 {
-    public:
+	public:
     User(string n, string e, string p, string aL)
 	{
         name = n;
         email = e;
         password = p;
-        accessLevel = aL
+        accessLevel = aL;
     }
+};
+
+class Admin : public Account
+{
+};
+
+class Guest : public Account
+{
 };
 
 vector<User> Users;
@@ -42,15 +54,40 @@ void getUsers()
     while (getline(userFile, line))
 	{
         stringstream ss(line);
-        string name, email, password;
+        string name, email, password, accessLevel;
 
-        if (getline(ss, name, ',') && getline(ss, email, ',') && getline(ss, password))
+        if (getline(ss, name, ',') && getline(ss, email, ',') && getline(ss, password, ',') && getline(ss, accessLevel))
 		{
-            Users.push_back(User(name, email, password));
+            Users.push_back(User(name, email, password, "admin"));
         }
     }
     userFile.close();
 }
+
+//void readAccessFile(User &user)
+void readAccessFile()
+{
+	adminAccessFile.open("data/admin.txt");
+	userAccessFile.open("data/user.txt");
+	guestAccessFile.open("data/guest.txt");
+	
+	//string al = user->accessLevel;
+	string al = "admin";
+	
+	if (al == "admin")
+	{
+		std::string line;
+    	while (std::getline(adminAccessFile, line)) {
+        	std::cout << line << std::endl;
+    	}
+		
+	}
+	
+	adminAccessFile.close();
+	userAccessFile.close();
+	guestAccessFile.close();
+}
+
 
 void displayAccounts()
 {
@@ -75,12 +112,13 @@ bool login(const string& email, const string& password)
 
 void registerUser(const string& name, const string& email, const string& password)
 {
-    Users.push_back(User(name, email, password));
+	string accessLevel = "admin";
+    Users.push_back(User(name, email, password, "admin"));
     ofstream outFile("users.csv", ios::app);
     
     if (outFile.is_open())
 	{
-        outFile << name << "," << email << "," << password << "," << << endl;
+        outFile << name << "," << email << "," << password << "," << accessLevel << endl;
         outFile.close();
     }
 	else
@@ -167,7 +205,7 @@ int main()
 	clearScreen();
 	cout << "Authenticated" << endl;
 	
-	
+	readAccessFile();
 	
     return 0;
 }

@@ -1,4 +1,4 @@
-ADMIN, admin123@gmail.com, Admin123
-ADMIN2,	admin456@gmail.com, Admin456
-Amaan Kazi,amaankazi1793@gmail.com,Password123
-Amaan Kazi,amaankazi1793@gmail.com,Password123,0
+ADMIN, admin123@gmail.com, Admin123,guest
+ADMIN2,	admin456@gmail.com, Admin456,user
+Amaan Kazi,amaankazi1793@gmail.com,Password123,user
+Amaan Kazi,amaankazi1793@gmail.com,Password123,admin
