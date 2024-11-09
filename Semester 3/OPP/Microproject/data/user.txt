@@ -1,1 +1,1 @@
-This data is visible to the the user and the admin
+This data is visible to the user and the admin
