@@ -1,0 +1,8 @@
+User 1,user1@gmail.com,UserPassword1,user
+User 2,user2@gmail.com,UserPassword2,user
+Admin 1,admin1@gmail.com,AdminPassword1,admin
+Admin 2,admin2@gmail.com,AdminPassword2,admin
+Guest 1,guest1@gmail.com,GuestPassword1,guest
+Guest 2,guest2@gmail.com,GuestPassword2,guest
+
+New User,user@gmail.com,UserPassword,user
