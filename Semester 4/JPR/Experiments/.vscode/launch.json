@@ -1,0 +1,24 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Compile and Run Active Java File",
+      "request": "launch",
+      "mainClass": "${file}",
+      "console": "externalTerminal",
+      "preLaunchTask": "compileActiveJavaFile"
+    },
+    {
+      "type": "java",
+      "name": "Compile and Run Active Java File [Integrated]",
+      "request": "launch",
+      "mainClass": "${file}",
+      "console": "integratedTerminal",
+      "preLaunchTask": "compileActiveJavaFile"
+    }
+  ]
+}
